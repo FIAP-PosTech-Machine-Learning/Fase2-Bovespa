@@ -1,0 +1,43 @@
+# Files and folders to be ignored by Git
+
+# Automatically generated files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.db
+*.sqlite3
+
+# Log files
+*.log
+
+# Local environment files
+.env
+
+# Compiled files
+*.pyc
+
+# Byte-compiled / compiled Python modules
+*.pyo
+*.pyd
+
+# Virtual environment
+.venv/
+venv/
+env/
+
+# System files
+.DS_Store
+
+# Dependency cache
+__pycache__/
+
+# System-specific configuration files
+.vscode/
+.idea/
+
+# Temporary files folder
+/temp/
+
+# VSCode configuration
+settings.json
