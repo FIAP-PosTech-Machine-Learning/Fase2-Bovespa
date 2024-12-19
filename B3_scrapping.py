@@ -13,11 +13,11 @@ logging.basicConfig(level=logging.INFO,
 
 
 def prepare_data_folder():
-    data_folder = os.path.join(os.getcwd(), 'data')
+    data_folder = os.path.join(os.getcwd(), 'bovespa')
 
     if not os.path.exists(data_folder):  # Create data folder if it doesn't exist
         os.makedirs(data_folder)
-        logging.info(f"Pasta 'data' criada em: {data_folder}")
+        logging.info(f"Pasta 'bovespa' criada em: {data_folder}")
     else:
         # Remove all files in data folder
         for filename in os.listdir(data_folder):
@@ -37,7 +37,7 @@ def download_b3_latest_data():
 
     prepare_data_folder()  # Prepare data folder
     current_path = os.getcwd()
-    download_path = os.path.join(current_path, "data")
+    download_path = os.path.join(current_path, "bovespa")
     options.add_experimental_option("prefs", {
         "download.default_directory": download_path,
         "download.prompt_for_download": False,
@@ -57,7 +57,7 @@ def download_b3_latest_data():
     download_button = driver.find_element(
         By.LINK_TEXT, "Download")  # Download the data
     download_button.click()
-
+    logging.info(f"Realizando download dos dados da B3 em: {download_path}")
     time.sleep(5)
     driver.quit()
 
