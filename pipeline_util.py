@@ -27,8 +27,8 @@ def _insert_date_column(file_path, date_value):
         header[3] = 'acao'
         header[4] = 'tipo'
         header[5] = 'qtde_teorica'
-        header[6] = 'part'
-        header[7] = 'part_acum'
+        header[6] = 'part_percent'
+        header[7] = 'part_acum_percent'
 
         for row in rows[2:]:
             row.insert(0, date_value)

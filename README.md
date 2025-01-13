@@ -54,7 +54,7 @@ $ pip install -r requirements.txt
         <td align="center">
       <img src="https://avatars.githubusercontent.com/u/160500128?v=4" width="160px" alt="Foto da Vanessa"/><br>
       <sub>
-        <a href="https://github.com/AnjosVanessa">@AnjosVanessa</a>
+        <a href="https://github.com/AnjosVanessa">@Anjos Vanessa</a>
       </sub>
     </td>
   </tr>
